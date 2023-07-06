@@ -1,10 +1,11 @@
 img {
-    height: 5rem;
+    height: 2rem;
 }
 
 .header {
     justify-content: center;
     height: 10%;
+    background-color: chartreuse;
 }
 
 span {
