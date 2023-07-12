@@ -5,7 +5,7 @@ img {
 .header {
     justify-content: center;
     height: 10%;
-    background-color: chartreuse;
+    background-color: rgb(104, 195, 223);
 }
 
 span {
@@ -15,4 +15,7 @@ span {
 
 h1 {
     padding-left: 1.2rem;
+    padding-top: 1.2rem;    
+    color: grey;
+    text-shadow: white 2px 1px;
 }

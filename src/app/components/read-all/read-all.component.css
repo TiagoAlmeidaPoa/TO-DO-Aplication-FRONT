@@ -3,6 +3,20 @@
     margin: auto;
 }
 
+.badge {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.badge button {
+    margin: auto;
+    width: 100%;
+    background-color: green;
+    color: aliceblue;
+}
+
 .content {
     width: 100%;    
 }
