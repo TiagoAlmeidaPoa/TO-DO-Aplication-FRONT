@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="subtitle header">
+        <span>
+            <img src="assets/img/done.JPEG" alt="">
+        </span>
+        <span>
+            <h1>Finished tasks</h1>
+        </span>
+    </div>
+  <div class="badge">
+    <button
+      (click)="toBack()"
+      class="new-todo mat-elevation-z8"
+      mat-stroked-button
+      color="primary"
+    >
+      back
+    </button>
+  </div>
+
+  <div class="content" *ngFor="let item of listFinished">
+    <mat-card class="mat-elevation-z8">
+      <mat-card-content>
+        <p>End date: {{ item.endDate }}</p>
+        <mat-card-header>
+          <mat-card-title>{{ item.title }}</mat-card-title>
+          <mat-card-subtitle>{{ item.description }}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
