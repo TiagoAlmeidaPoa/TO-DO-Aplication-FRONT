@@ -33,6 +33,15 @@ export class ReadAllComponent implements OnInit {
     });
   }
 
+  finalize(item: Todo): void {
+    item.finished = true;
+    this.service.update(item).subscribe(() => {
+        this.service.message("Sucess task finalized !");
+        this.list = this.list.filter((todo) => todo.id !== item.id);
+        this.closed++;
+    });
+  }
+
   delete(id: any): void {
     this.service.delete(id).subscribe((response) => {
       if (response === null) {
@@ -43,6 +52,6 @@ export class ReadAllComponent implements OnInit {
   }
 
   finished(): void {
-    this.router.navigate(['finished'])
+    this.router.navigate(["finished"]);
   }
 }
