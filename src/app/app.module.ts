@@ -15,6 +15,7 @@ import { MatIconModule } from "@angular/material/icon";
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FinishedComponent } from './components/finished/finished.component';
+import { CreateComponent } from './components/create/create.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FinishedComponent } from './components/finished/finished.component';
     FooterComponent,
     ReadAllComponent,
     FinishedComponent,
+    CreateComponent,
   ],
   imports: [
     BrowserModule,
