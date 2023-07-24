@@ -1,0 +1,32 @@
+<form>
+    <h1>Updating TO-DO</h1>
+
+    <div class="date-finished">
+        <mat-form-field>
+            <mat-label>End Date</mat-label>
+            <input [(ngModel)]="todo.endDate" name="todo.endDate" matInput [matDatepicker]="dp3" disabled>
+            <mat-hint>DD/MM/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="dp3"></mat-datepicker-toggle>
+            <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+          </mat-form-field>
+    </div>
+
+      <div class="forms">
+        <mat-form-field class="form">
+            <mat-label>Title</mat-label>
+            <input [(ngModel)]="todo.title" name="todo.title" matInput placeholder="Estudar Spring">
+          </mat-form-field>
+    
+          <mat-form-field class="form">
+            <mat-label>Description</mat-label>
+            <input [(ngModel)]="todo.description" name="todo.description" matInput placeholder="Estudar Spring Boot 2">
+          </mat-form-field>
+      </div>
+
+      <div class="buttons">
+        <button (click)="update()" mat-stroked-button color="primary">UPDATE</button>
+        <button (click)="cancel()" mat-stroked-button color="warn">CANCEL</button>
+      </div>
+      
+</form>
+

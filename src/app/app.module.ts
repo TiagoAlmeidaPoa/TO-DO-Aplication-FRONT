@@ -21,6 +21,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from "@angular/material/core";
 import {MAT_DATE_LOCALE} from '@angular/material/core';
+import { UpdateComponent } from './components/update/update.component';
 
 
 
@@ -33,6 +34,7 @@ import {MAT_DATE_LOCALE} from '@angular/material/core';
     ReadAllComponent,
     FinishedComponent,
     CreateComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,
